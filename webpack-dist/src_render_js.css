@@ -1,4 +1,17 @@
-.text {
-    color: blue;
+.rspack-repro-_src_render_module_css-columnCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-head{--webpack-rspack-repro-src_render_js:\.\/src\/render\.css;}
+
+.rspack-repro-_src_render_module_css-root {
+    composes: columnCenter;
+    max-width: 1280px;
+}
+
+.rspack-repro-_src_render_module_css-root.rspack-repro-_src_render_module_css-main {
+    background-color: #000;
+    color: #fff;
+}
+head{--webpack-rspack-repro-src_render_js:columnCenter:rspack-repro-_src_render_module_css-columnCenter/root:rspack-repro-_src_render_module_css-root/main:rspack-repro-_src_render_module_css-main/\.\/src\/render\.module\.css;}

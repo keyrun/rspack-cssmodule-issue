@@ -1,0 +1,16 @@
+.columnCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.root {
+    composes: columnCenter;
+    max-width: 1280px;
+}
+
+.root.main {
+    background-color: #000;
+    color: #fff;
+}
